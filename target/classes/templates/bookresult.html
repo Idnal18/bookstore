@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="IT" xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Inserimento completato</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Dati del libro inserito:</h1>
+    <p th:text="'Titolo: ' + ${book.nomeLibro}" >
+    <p th:text="'Autore: ' + ${book.autoreLibro}" >
+    <h3><a href="/book">Inserisci un altro libro</a></h3>
+</body>
+</html>
