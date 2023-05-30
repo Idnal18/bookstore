@@ -7,9 +7,9 @@
     <body>
         <h1>Inserisci i dati del libro</h1>
         <form action="#" th:action="@{/book}" th:object="${book}" method="post">
-            <p>Titolo del libro: <input type="text" th:field="*{nomeLibro}" /></p>
-            <p>Autore del libro: <input type="text" th:field="*{autoreLibro}" /></p>
-            <p>Data di pubblicazione del libro(gg/mm/AA): <input type="text" th:field="*{dataPubblicazione}" /></p>
+            <p>Titolo del libro: <input type="text" th:field="*{nomeLibro}" required /></p>
+            <p>Autore del libro: <input type="text" th:field="*{autoreLibro}" required /></p>
+            <p>Data di pubblicazione del libro: <input type="date" th:field="*{dataPubblicazione}" required /></p>
             <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
         </form>
     </body>
