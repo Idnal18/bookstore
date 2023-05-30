@@ -4,6 +4,7 @@ public class BookModel {
 
     private String nomeLibro;
     private String autoreLibro;
+    private String dataPubblicazione;
 
     public String getNomeLibro() {
         return nomeLibro;
@@ -19,6 +20,14 @@ public class BookModel {
 
     public void setAutoreLibro(String autoreLibro) {
         this.autoreLibro = autoreLibro;
+    }
+
+    public String getDataPubblicazione() {
+        return dataPubblicazione;
+    }
+
+    public void setDataPubblicazione(String dataPubblicazione) {
+        this.dataPubblicazione = dataPubblicazione;
     }
     
 }
